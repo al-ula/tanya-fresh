@@ -1,12 +1,11 @@
 import Card from "../components/Card.tsx";
-import { registerName, loadName, deleteName } from "../signals/registerName.ts";
+import { deleteName, loadName, registerName } from "../signals/registerName.ts";
 import { useEffect } from "preact/hooks";
 
 export default function SignupCard() {
-
   useEffect(() => {
     const name = loadName();
-    console.log("name: ",name);
+    console.log("name: ", name);
     if (name === null) {
       globalThis.location.href = "/";
     } else {
@@ -19,8 +18,8 @@ export default function SignupCard() {
       <Card.Body>
         <Card.Title class="justify-center">Signup</Card.Title>
         <form className="flex flex-col mt-4 card-actions">
-          <div class="bg-base-200 shadow-base-content/10 shadow-md my-2 p-4 rounded-md w-full" >
-            <label class="w-max" for="name">Name: </label>
+          <div class="bg-base-200 shadow-base-content/10 shadow-md my-2 mb-4 p-4 rounded-md w-full">
+            <label class="mr-2 w-max" for="name">Name:</label>
             <input
               id="name"
               class="bg-transparent"
@@ -28,7 +27,11 @@ export default function SignupCard() {
               disabled
             />
           </div>
-          <a class="mx-auto w-max btn btn-primary" href="/" onClick={deleteName}>
+          <a
+            class="mx-auto w-max btn btn-primary"
+            href="/"
+            onClick={deleteName}
+          >
             <h1>G</h1>Continue with Google
           </a>
           <div class="divider">or</div>

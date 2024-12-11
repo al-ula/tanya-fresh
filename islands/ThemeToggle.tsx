@@ -12,7 +12,18 @@ export default function ThemeToggle(props: ThemeToggleProps) {
   const [isDark, setIsDark] = useState(theme.value === dark);
 
   useEffect(() => {
-    theme.value = props.theme_state;
+    if (document.cookie.match(/theme=([^;]+)/) === null) {
+      const systemTheme =
+        globalThis.matchMedia("(prefers-color-scheme: dark)").matches
+          ? dark
+          : light;
+
+      setIsDark(systemTheme === dark);
+      theme.value = systemTheme;
+    }
+  }, []);
+
+  useEffect(() => {
     setIsDark(props.theme_state === dark);
   }, [props.theme_state]);
 
