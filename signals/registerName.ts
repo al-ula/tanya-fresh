@@ -18,4 +18,4 @@ function deleteName() {
   localStorage.removeItem("registerName");
 }
 
-export { loadName, registerName, saveName, deleteName };
+export { deleteName, loadName, registerName, saveName };
