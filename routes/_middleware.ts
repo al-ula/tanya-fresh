@@ -22,4 +22,4 @@ export const handler = [
     const resp = await ctx.next();
     return resp;
   },
-]
+];

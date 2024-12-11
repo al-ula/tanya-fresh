@@ -5,6 +5,7 @@ const { DARK: dark, LIGHT: light } = themes;
 
 interface ThemeToggleProps {
   theme_state: string;
+  className?: string;
 }
 
 export default function ThemeToggle(props: ThemeToggleProps) {
@@ -29,7 +30,9 @@ export default function ThemeToggle(props: ThemeToggleProps) {
   }, [isDark]);
 
   return (
-    <label className="swap-rotate swap">
+    <label
+      className={"swap-rotate btn btn-circle btn-ghost swap " + props.className}
+    >
       {/* this hidden checkbox controls the state */}
       <input
         type="checkbox"

@@ -1,34 +1,37 @@
-import { useSignal } from "@preact/signals";
-import Counter from "../islands/Counter.tsx";
-import ThemeToggle from "../islands/ThemeToggle.tsx";
-import { PageProps } from "$fresh/server.ts";
-import { theme } from "../signals/theme.ts";
-import themes from "../theme-config.ts";
+import CardActionLogin from "../islands/CardActionLogin.tsx";
+import Card from "../components/Card.tsx";
 
-const { DARK: dark, LIGHT: light } = themes;
-
-export default function Home({ state }: PageProps) {
-  const themeState = state.theme === dark ? dark : light;
-    theme.value = themeState;
-  const count = useSignal(3);
+export default function Home() {
   return (
-    <div class="bg-[#86efac] mx-auto px-4 py-8">
-      <div class="flex flex-col justify-center items-center mx-auto max-w-screen-md">
-        <img
-          class="my-6"
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the Fresh logo: a sliced lemon dripping with juice"
-        />
-        <h1 class="font-bold text-4xl">Welcome to Fresh</h1>
-        <p class="my-4">
-          Try updating this message in the
-          <code class="mx-2">./routes/index.tsx</code> file, and refresh.
-        </p>
-        <Counter count={count} />
-        <ThemeToggle theme_state={themeState} />
-      </div>
+    <div class="flex flex-col items-center mx-auto mb-2 pb-2 w-full">
+      <Card.Root class="bg-base-200 my-2 w-full max-w-xl text-base-content">
+        <Card.Body>
+          <Card.Title class="justify-center mb-2">
+            <h2>Secret Message Book</h2>
+          </Card.Title>
+          <ul class="list-disc list-inside">
+            <li>Get anonymous feedback from your Friends & Coworkers.</li>
+            <li>
+              Improve your Friendship by discovering your Strengths and areas
+              for Improvement
+            </li>
+          </ul>
+        </Card.Body>
+      </Card.Root>
+      <Card.Root class="bg-base-200 my-2 w-full max-w-xl text-base-content">
+        <Card.Body>
+          <Card.Title class="justify-start mb-2">
+            <h3>Create book</h3>
+          </Card.Title>
+          <CardActionLogin />
+          <p>
+            Already have an account?{" "}
+            <a href="/login" class={"btn btn-sm btn-ghost text-accent !p-1"}>
+              Login
+            </a>
+          </p>
+        </Card.Body>
+      </Card.Root>
     </div>
   );
 }
