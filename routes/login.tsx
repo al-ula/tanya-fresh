@@ -1,39 +1,37 @@
-import Card from "../components/Card.tsx";
+import { Head } from "$fresh/runtime.ts";
+import { PageProps } from "$fresh/server.ts";
+import LoginCard, { Locale, LocaleContent } from "../islands/LoginCard.tsx";
+import { Language } from "../locale/index.ts";
 
-export default function Login() {
+const LoginCardLocale: Locale = {
+  [Language.ID]: {
+    "continueButton": "Lanjutkan",
+    "or": "atau",
+  } satisfies LocaleContent,
+  [Language.EN]: {
+    "continueButton": "Continue",
+    "or": "or",
+  } satisfies LocaleContent,
+};
+
+export default function Login(props: PageProps) {
+  const lang: Language = props.state?.lang === Language.ID
+    ? Language.ID
+    : Language.EN;
+  const gis_client_id: string = Deno.env.get("GIS_CLIENT_ID") || (() => {
+    throw new Error("GIS_CLIENT_ID is not set");
+  })();
   return (
-    <div class="flex flex-col items-center mx-auto mb-2 pb-2 w-full">
-      <Card.Root class="bg-base-200 my-2 w-full max-w-xl text-base-content">
-        <Card.Body>
-          <Card.Title class="justify-center mb-4">Login</Card.Title>
-          <a class="mx-auto w-max btn btn-primary" href="/">
-            <h1>G</h1>Continue with Google
-          </a>
-          <div class="divider">or</div>
-          <form className="flex flex-col mt-4 card-actions">
-            <div class="flex-1 gap-2 grid grid-cols-2 w-full">
-              <input
-                type="text"
-                placeholder="Email"
-                class="bg-base-200 shadow-base-content/10 shadow-md min-w-0 text-base-content placeholder:text-base-content/50 cols-1 input"
-                required
-              />
-              <input
-                type="password"
-                placeholder="Password"
-                class="bg-base-200 shadow-base-content/10 shadow-md min-w-0 text-base-content placeholder:text-base-content/50 cols-1 input"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="shadow-base-content/10 shadow-md w-full text-base-conten hover:animate-pulse btn btn-ghost"
-            >
-              Continue
-            </button>
-          </form>
-        </Card.Body>
-      </Card.Root>
-    </div>
+    <>
+      <Head>
+        <script src="https://accounts.google.com/gsi/client" async></script>
+      </Head>
+      <div class="flex flex-col items-center mx-auto mb-2 pb-2 w-full">
+        <LoginCard
+          gis_client_id={gis_client_id}
+          locale={LoginCardLocale[lang]}
+        />
+      </div>
+    </>
   );
 }
