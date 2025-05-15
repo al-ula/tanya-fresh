@@ -32,5 +32,3 @@ jobs:
           project: "tanya"
           entrypoint: "main.ts"
           root: "."
-          
-          

@@ -2,12 +2,14 @@ import { ComponentChildren } from "preact";
 
 interface Props {
   class?: string;
+  id?: string;
   children?: ComponentChildren;
 }
 
 export function Root(prop: Props) {
   return (
     <div
+      id={prop.id}
       class={"card " +
         prop.class}
     >
@@ -18,7 +20,7 @@ export function Root(prop: Props) {
 
 export function Body(prop: Props) {
   return (
-    <div class={"card-body " + prop.class}>
+    <div id={prop.id} class={"card-body " + prop.class}>
       {prop.children}
     </div>
   );
@@ -26,7 +28,7 @@ export function Body(prop: Props) {
 
 export function Title(prop: Props) {
   return (
-    <div class={"card-title " + prop.class}>
+    <div id={prop.id} class={"card-title " + prop.class}>
       {prop.children}
     </div>
   );
@@ -34,7 +36,7 @@ export function Title(prop: Props) {
 
 export function Actions(prop: Props) {
   return (
-    <div class={"card-actions " + prop.class}>
+    <div id={prop.id} class={"card-actions " + prop.class}>
       {prop.children}
     </div>
   );

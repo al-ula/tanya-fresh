@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1900639-f1ae-4f01-91d7-05da83126e1f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/db/client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/schema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drizzle.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tanya.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deno.json" beforeDir="false" afterPath="$PROJECT_DIR$/deno.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fresh.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fresh.gen.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/islands/CardActionLogin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/islands/CardActionLogin.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/islands/SignupCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/islands/SignupCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/routes/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/_middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes/_middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/joke.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/greet/[name].tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/routes/signup.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;al-ula&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/al-ula/tanya-fresh.git&quot;,
+    &quot;accountId&quot;: &quot;e686da0c-8402-4acb-a2c8-3d6f98931cb6&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2pfEpX5rSafXwGjlI7TSLmLIGZT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;deno.use.library&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/seer/myproj/iisa/tanya-qk&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.codeium.AppSettingsConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/seer/myproj/denos/tanya/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1900639-f1ae-4f01-91d7-05da83126e1f" name="Changes" comment="" />
+      <created>1733148913002</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733148913002</updated>
+      <workItem from="1733148914401" duration="68000" />
+      <workItem from="1733149016894" duration="1556000" />
+      <workItem from="1733465785739" duration="37000" />
+      <workItem from="1733990127815" duration="221000" />
+      <workItem from="1733990403766" duration="204000" />
+      <workItem from="1733990652226" duration="93000" />
+      <workItem from="1733990780258" duration="113000" />
+      <workItem from="1733990926580" duration="100000" />
+      <workItem from="1733991061680" duration="25000" />
+      <workItem from="1733991133193" duration="2140000" />
+      <workItem from="1734021895454" duration="533000" />
+      <workItem from="1734022473745" duration="2199000" />
+      <workItem from="1734025090792" duration="8453000" />
+      <workItem from="1734073125173" duration="4650000" />
+      <workItem from="1734078869816" duration="10271000" />
+      <workItem from="1734497248386" duration="8902000" />
+      <workItem from="1734580100354" duration="413000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge commit 'f31b63bab5f307f50ba0237efb23a55ccb10f47f' into HEAD" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+</project>

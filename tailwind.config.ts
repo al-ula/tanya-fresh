@@ -7,6 +7,7 @@ import typography from "@tailwindcss/typography";
 export default {
   content: [
     "{routes,islands,components}/**/*.{ts,tsx,js,jsx}",
+    "static/**/*.svg",
   ],
   plugins: [
     daisyui as any,
